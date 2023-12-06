@@ -2,7 +2,7 @@
 # Update line 5 - 8 to match your environment
 
 # General parameteers
-$ISO = "F:\ISO\Windows Server 2022 (updated November 2021).iso" # Path to Windows Server 2022 media
+$ISO = "C:\ISO\SW_DVD9_Win_Server_STD_CORE_2022_2108.7_64Bit_English_DC_STD_MLF_X23-09508.iso" # Path to Windows Server 2022 media
 $WIMPath = "C:\Ref" # Target folder for extracted WIM file containing Windows Server 2022 Standard only
 $WIMFile = "$WIMPath\REFWS2022-001.wim" # Exported WIM File
 $Edition = "Windows Server 2022 Standard (Desktop Experience)" # Edition to export. Note: If using Evaluation Media, use: Windows Server 2022 Standard Evaluation (Desktop Experience)
