@@ -34,13 +34,13 @@
 #Requires -Version 3
 
 #Set the path to the created deploymentshare
-$HydrationSource = "D:\CMLab"
+$HydrationSource = "C:\CMLab"
 
 #Change Domain and OU structure, these values will be changed in all files where applicable
-$NewDomainName = "corp.mydomain.org" #Default = corp.viamonstra.com
-$NewDomainRoot = "dc=corp,dc=mydomain,dc=org"
-$NewMachineOU = "ou=Servers,ou=MyDomain,dc=corp,dc=mydomain,dc=org" #Default = ou=Servers,ou=ViaMonstra,dc=corp,dc=viamonstra,dc=com
-$NewOrgName = "MyDomain" #Default = ViaMonstra or VIAMONSTRA
+$NewDomainName = "lab.home.local" #Default = corp.viamonstra.com
+$NewDomainRoot = "dc=lab,dc=home,dc=local"
+$NewMachineOU = "ou=Servers,ou=LAB,dc=lab,dc=home,dc=local" #Default = ou=Servers,ou=ViaMonstra,dc=corp,dc=viamonstra,dc=com
+$NewOrgName = "LAB" #Default = ViaMonstra or VIAMONSTRA
 $NewTimeZoneName = "W. Europe Standard Time" #Default = Pacific Standard Time
 
 #Change Admin Passwd
