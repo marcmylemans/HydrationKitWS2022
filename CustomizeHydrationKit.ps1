@@ -41,7 +41,7 @@ $NewDomainName = "lab.home.local" #Default = corp.viamonstra.com
 $NewDomainRoot = "dc=lab,dc=home,dc=local"
 $NewMachineOU = "ou=Servers,ou=LAB,dc=lab,dc=home,dc=local" #Default = ou=Servers,ou=ViaMonstra,dc=corp,dc=viamonstra,dc=com
 $NewOrgName = "LAB" #Default = ViaMonstra or VIAMONSTRA
-$NewTimeZoneName = "W. Europe Standard Time" #Default = Pacific Standard Time
+$NewTimeZoneName = "Romance Standard Time" #Default = Pacific Standard Time
 
 #Change Admin Passwd
 # $NewPasswd = "newpass" #Default = P@ssw0rd
