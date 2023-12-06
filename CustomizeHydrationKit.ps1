@@ -47,38 +47,38 @@ $NewTimeZoneName = "W. Europe Standard Time" #Default = Pacific Standard Time
 # $NewPasswd = "newpass" #Default = P@ssw0rd
 
 #General IP settings, used in all files where applicable, default for all these are on the 192.168.25.x net
-$NewOSDAdapter0DNSServerList = "10.10.5.200" #Also used for DC01 ip-adress
-$newOSDAdapter0Gateways= "10.10.5.1"
+$NewOSDAdapter0DNSServerList = "10.48.48.200" #Also used for DC01 ip-adress
+$newOSDAdapter0Gateways= "10.48.48.1"
 $NewOSDAdapter0SubnetMask= "255.255.255.0"
-$NewADSubNet = "10.10.5.0"
+$NewADSubNet = "10.48.48.0"
 
 #DC01 - set DHCP scope on DC01
-$NewDHCPScopes0StartIP="10.10.5.100"
-$NewDHCPScopes0EndIP="10.10.5.199"
+$NewDHCPScopes0StartIP="10.48.48.100"
+$NewDHCPScopes0EndIP="10.48.48.199"
 
 #Set IP-adress for CM01
-$NewCM01OSDAdapter0IPAddressList= "10.10.5.214"
+$NewCM01OSDAdapter0IPAddressList= "10.48.48.214"
 
 #Set IP-adress for DP01
-$NewDP01OSDAdapter0IPAddressList= "10.10.5.245"
+$NewDP01OSDAdapter0IPAddressList= "10.48.48.245"
 
 #Set IP-adress for MDT01
-$NewMDT01OSDAdapter0IPAddressList= "10.10.5.210"
+$NewMDT01OSDAdapter0IPAddressList= "10.48.48.210"
 
 #Set IP-adress for FS01
-$NewFS01OSDAdapter0IPAddressList= "10.10.5.213"
+$NewFS01OSDAdapter0IPAddressList= "10.48.48.213"
 
 #Set IP-adress for PC0001
-$NewPC0001OSDAdapter0IPAddressList= "10.10.5.11"
+$NewPC0001OSDAdapter0IPAddressList= "10.48.48.11"
 
 #Set IP-adress for PC0002
-$NewPC0002OSDAdapter0IPAddressList= "10.10.5.12"
+$NewPC0002OSDAdapter0IPAddressList= "10.48.48.12"
 
 #Set IP-adress for PC0003
-$NewPC0003OSDAdapter0IPAddressList= "10.10.5.13"
+$NewPC0003OSDAdapter0IPAddressList= "10.48.48.13"
 
 #Set IP-adress for PC0004
-$NewPC0004OSDAdapter0IPAddressList= "10.10.5.14"
+$NewPC0004OSDAdapter0IPAddressList= "10.48.48.14"
 
 
 #------------------ Do Not change below this line-----------------#
