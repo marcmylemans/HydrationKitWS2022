@@ -68,6 +68,12 @@ $NewMDT01OSDAdapter0IPAddressList= "10.48.48.210"
 #Set IP-adress for FS01
 $NewFS01OSDAdapter0IPAddressList= "10.48.48.213"
 
+#Set IP-adress for RDGW01
+$NewFS01OSDAdapter0IPAddressList= "10.48.48.215"
+
+#Set IP-adress for RDS01
+$NewFS01OSDAdapter0IPAddressList= "10.48.48.216"
+
 #Set IP-adress for PC0001
 $NewPC0001OSDAdapter0IPAddressList= "10.48.48.11"
 
@@ -188,6 +194,19 @@ If($NewOSDAdapter0DNSServerList){Update-HKContent -fileName $HydrationSource\ISO
 If($newOSDAdapter0Gateways){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '192.168.25.1' -newValue $newOSDAdapter0Gateways }
 If($NewFS01OSDAdapter0IPAddressList){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '192.168.25.213' -newValue $NewFS01OSDAdapter0IPAddressList }
 If($NewOSDAdapter0SubnetMask){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '255.255.255.0' -newValue $NewOSDAdapter0SubnetMask }
+
+#Update Customsettings_RDGW01.ini
+If($NewOSDAdapter0DNSServerList){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '192.168.25.200' -newValue $NewOSDAdapter0DNSServerList }
+If($newOSDAdapter0Gateways){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '192.168.25.1' -newValue $newOSDAdapter0Gateways }
+If($NewFS01OSDAdapter0IPAddressList){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '192.168.25.215' -newValue $NewRDGW01OSDAdapter0IPAddressList }
+If($NewOSDAdapter0SubnetMask){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_FS01.ini -orgValue '255.255.255.0' -newValue $NewOSDAdapter0SubnetMask }
+
+#Update Customsettings_RDS01.ini
+If($NewOSDAdapter0DNSServerList){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_RDS01.ini -orgValue '192.168.25.200' -newValue $NewOSDAdapter0DNSServerList }
+If($newOSDAdapter0Gateways){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_RDS01.ini -orgValue '192.168.25.1' -newValue $newOSDAdapter0Gateways }
+If($NewFS01OSDAdapter0IPAddressList){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_RDS01.ini -orgValue '192.168.25.216' -newValue $NewRDS01OSDAdapter0IPAddressList }
+If($NewOSDAdapter0SubnetMask){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_RDS01.ini -orgValue '255.255.255.0' -newValue $NewOSDAdapter0SubnetMask }
+
 
 #Update Customsettings_PC0001.ini
 If($NewOSDAdapter0DNSServerList){Update-HKContent -fileName $HydrationSource\ISO\Content\Deploy\Control\Customsettings_PC0001.ini -orgValue '192.168.25.200' -newValue $NewOSDAdapter0DNSServerList }
